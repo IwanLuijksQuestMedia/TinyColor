@@ -53,6 +53,13 @@
       tinycolor("darkblue");
       ```
 
+	* Multilingual (through including the language file after tinycolor, before initialization)
+
+	  ```js
+	  tinycolor("Rood");
+	  tinycolor("donkerrood");
+	  ```
+
 * File Size:
 
         The minified size is:
