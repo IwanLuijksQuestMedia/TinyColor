@@ -103,25 +103,20 @@
 <body>
     <div id="container">
 	<h1>TinyColor</h1>
-	<h2>&#8594; A fast JavaScript color manipulation micro framework</h2>
+	<h2>Fast, small color manipulation and conversion for JavaScript</h2>
 
 	<p>
-	   TinyColor is a micro framework for inputting colors and outputting colors as different formats.
+	   <a href="https://github.com/bgrins/TinyColor">TinyColor</a> is a micro framework for inputting colors and outputting colors as different formats.
 	   Input is meant to be as permissive as possible.
-    </p>
+  </p>
 
-	<p>The following color types are supported:</p>
-	<ul>
-		<li>RGB</li>
-		<li>HSL</li>
-		<li>HSV</li>
-		<li>Hex</li>
-		<li>Name (from <a href='http://www.w3.org/TR/css3-color/#svg-color'>SVG color codes</a>)</li>
-	</ul>
+	<h3>Usage Documentation</h3>
+	<p>Read all the documentation on the <a href='https://github.com/bgrins/TinyColor'>TinyColor project page</a> on github.</p>
+
 	<h3>Code</h3>
 	<p><a href='docs/tinycolor.html'>View the annotated source code</a> or <a href='https://github.com/bgrins/TinyColor/blob/master/tinycolor.js'>see the full source on github</a>.</p>
 
-	<h3>Test</h3>
+	<h3>Tests</h3>
 	<p><a href='test/'>View the QUnit Tests</a>.</p>
 
 	<h3>Demo</h3>
@@ -191,89 +186,6 @@
 	       </tr>
 	   </table>
     </div>
-	</div>
-	<h3>Usage</h3>
-	<p>
-<pre>
-&lt;script type='text/javascript' src='tinycolor.js'&gt;&lt;/script&gt;
-</pre>
-	When you want to allow Dutch input too, add the Dutch language file
-	like below after that of TinyColor itself and before initialization of TinyColor:
-<pre>
-&lt;script type='text/javascript' src='lang/nl_NL.js'&gt;&lt;/script&gt;
-</pre>
-<pre>
-&lt;script type='text/javascript'&gt;
-var t = tinycolor("red");
-t.toHex()                   // "f00"
-t.toHexString()             // "#f00"
-t.toHex8()                  // "ffff0000"
-t.toHex8String()            // "#ffff0000"
-t.toRgb()                   // { r: 255, g: 0, b:0 }
-t.toRgbString()             // "rgb(255, 0, 0)"
-t.toHsv()                   // { h: 0, s: 1, v: 1 }
-t.toHsvString()             // "hsv(0, 100%, 100%)"
-t.toHsl()                   // { h: 0, s:1, l: 0.5 }
-t.toHslString()             // "hsl(0, 100%, 50%)"
-t.toName()                  // "red"
-&lt;/script&gt;
-</pre>
-
-		<h4>Instance Functions</h4>
-		<ul>
-			<li>toName()</li>
-			<li>toHex() / toHexString()</li>
-			<li>toHex8() / toHex8String()</li>
-			<li>toHsl() / toHslString()</li>
-			<li>toRgb() / toRgbString()</li>
-			<li>toHsv() / toHsvString()</li>
-			<li>toFilter()</li>
-		</ul>
-
-		<h4>Color Utilities</h4>
-		<ul>
-            <li>
-			tinycolor.equals(color1, color2)
-			</li>
-		</ul>
-
-		<h4>Color Modification</h4>
-		<ul>
-            <li>
-			tinycolor.lighten(color)
-			</li>
-            <li>
-			tinycolor.darken(color)
-			</li>
-            <li>
-			tinycolor.desaturate(color)
-			</li>
-            <li>
-			tinycolor.saturate(color)
-			</li>
-            <li>
-			tinycolor.greyscale(color)
-			</li>
-		</ul>
-		<h4>Color Combinations</h4>
-		<ul>
-            <li>
-			tinycolor.analogous(color)
-			</li>
-            <li>
-			tinycolor.monochromatic(color)
-			</li>
-            <li>
-			tinycolor.splitcomplements(color)
-			</li>
-            <li>
-			tinycolor.triad(color)
-			</li>
-            <li>
-			tinycolor.tetrad(color)
-			</li>
-        </ul>
-	</p>
 
 	<h3>Credit</h3>
 	<p>
@@ -286,10 +198,6 @@ t.toName()                  // "red"
 	   <li><a href='http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript'>mjijackson.com</a> for the first stab at RGB / HSL / HSV converters</li>
 
 	</ul>
-
-
-
-  <a href="http://github.com/bgrins/TinyColor"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   </div>
 </body>
